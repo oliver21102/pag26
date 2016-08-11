@@ -1,0 +1,271 @@
+
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	 <script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script  src="js/jquery.ui.touch-punch.min.js"></script>
+<script  src="js/OZGFunciones3.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet"   href="css/estilo3.css">
+ 
+
+ <style >
+
+ .atomico{}
+ .masico{}
+ .protones{}
+ .neutrones{}
+ .electrones{}
+
+ .Magnesio{ }
+ .Cloro{}
+
+ .Potasio{}
+ .Magnesio2{}
+ .Calcio{}
+
+
+ </style>
+
+
+</head>
+<body onresize="ajustar()" onload="inicio()">
+<img  id="fondo"src="imagenes/fondo.jpg" width="100%"  height="100%">
+<div id="consigna">Arrastra cada elemento donde corresponda para completar la tabla.</div>
+
+<div id="a1" class="cajas" style="left:10%; top:20%" ><div class="textoI" >12</div></div>
+<div id="a3" class="cajas" style="left:10%; top:20%" ><div class="textoI" >12</div></div>
+<div id="a4" class="cajas" style="left:10%; top:20%" ><div class="textoI" >12</div></div>
+<div id="a5" class="cajas" style="left:10%; top:20%" ><div class="textoI" >12</div></div>
+<div id="a16" class="cajas" style="left:10%; top:20%" ><div class="textoI" >12</div></div>
+<div id="a18" class="cajas" style="left:10%; top:20%" ><div class="textoI" >12</div></div>
+
+<div id="a2" class="cajas" style="left:23%; top:20%"> <div class="textoI">24</div>  </div>
+
+<div id="a6" class="cajas" style="left:36%; top:20%" >  <div  class="textoI" >17</div>  </div>
+<div id="a8" class="cajas" style="left:36%; top:20%" >  <div  class="textoI" >17</div>  </div>
+
+<div id="a7" class="cajas" style="left:49%; top:20%" >  <div  class="textoI"  >35</div>  </div>
+
+<div id="a9" class="cajas" style="left:62%; top:20%" >  <div  class="textoI"  >18</div>  </div>
+<div id="a10" class="cajas" style="left:62%; top:20%" >  <div  class="textoI"  >18</div>  </div>
+<div id="a15" class="cajas" style="left:62%; top:20%" >  <div  class="textoI"  >18</div>  </div>
+<div id="a25" class="cajas" style="left:62%; top:20%" >  <div  class="textoI"  >18</div>  </div>
+
+<div id="a11" class="cajas" style="left:10%; top:30%" >  <div  class="textoI"  >19</div>  </div>
+<div id="a13" class="cajas" style="left:10%; top:30%" >  <div  class="textoI"  >19</div>  </div>
+<div id="a24" class="cajas" style="left:10%; top:30%" >  <div  class="textoI"  >19</div>  </div>
+
+<div id="a12" class="cajas" style="left:23%; top:30%" >  <div  class="textoI"  >39</div>  </div>
+
+<div id="a14" class="cajas" style="left:36%; top:30%" >  <div  class="textoI"  >20</div>  </div>
+<div id="a21" class="cajas" style="left:36%; top:30%" >  <div  class="textoI"  >20</div>  </div>
+<div id="a23" class="cajas" style="left:36%; top:30%" >  <div  class="textoI"  >20</div>  </div>
+
+<div id="a17" class="cajas" style="left:49%; top:30%" >  <div  class="textoI"  >25</div>  </div>
+
+<div id="a19" class="cajas" style="left:62%; top:30%" >  <div  class="textoI"  >13</div>  </div>
+
+
+<div id="a20" class="cajas" style="left:75%; top:30%" >  <div  class="textoI"  >10</div>  </div>
+
+<div id="a22" class="cajas" style="left:75%; top:20%" >  <div  class="textoI"  >40</div>  </div>
+
+
+
+
+
+<table class="tabla"  >
+  <tbody>
+    <tr>
+       <th class="cabecera" style="visibility:hidden"></th>
+      <th class="cabeceraP">Nº atómico (Z)</th>
+      <th class="cabeceraP">Nº másico (A) </th>
+      <th class="cabeceraP">Nº de protones</th>
+      <th class="cabeceraP">Nº neutrones</th>
+      <th class="cabeceraP">Nº electrones</th>
+
+    </tr>
+    <tr>
+      <td class="cabecera" style="text-align:center">Mg</td>
+      <td  id="n1"> </td>
+      <td id="n2"></td>
+      <td id="n3"> </td>
+      <td id="n4"></td>
+      <td id="n5"></td>
+    </tr>
+    <tr>
+      <td class="cabecera" style="text-align:center">Cl<span  style="vertical-align:super"> -</span ></td>
+      <td id="n6"></td>
+      <td id="n7"></td>
+      <td id="n8"> </td>
+      <td id="n9">  </td>
+      <td id="n10"></td>
+    </tr>
+
+     <tr>
+      <td class="cabecera" style="text-align:center">k <span  style="vertical-align:super"> +</span ></td>
+      <td id="n11"></td>
+      <td id="n12"></td>
+      <td id="n13"></td>
+      <td id="n14"></td>
+      <td id="n15"></td>
+    </tr>
+
+     <tr>
+      <td class="cabecera" style="text-align:center" >Mg  <span  style="vertical-align:super">2+</span ></td>
+    
+      <td id="n16"></td>
+      <td id="n17"></td>
+      <td id="n18"></td>
+      <td id="n19"></td>  
+      <td id="n20"></td>
+    </tr>
+
+     <tr>
+      <td class="cabecera" style="text-align:center">Ca <span  style="vertical-align:super">2+</span ></td>
+  
+      <td id="n21"></td>
+      <td id="n22"> </td>  
+      <td id="n23"></td>
+      <td id="n24"></td>
+      <td id="n25"></td>
+    </tr>
+
+      </tbody>
+  </table>
+
+
+
+
+<script >
+
+function ajustar(){
+var alto=$(window).height();
+  var ancho=$(window).width();
+
+   var tamanio= ancho/45;
+   var letrasI= document.getElementsByClassName("textoI");
+    var vconsigna=document.getElementById("consigna");
+    var contenido=document.getElementsByClassName("alinear");
+    var vcabecera=document.getElementsByClassName("cabeceraP");
+  
+    vconsigna.style.fontSize=(tamanio+5)+"px";
+
+   for(var i=0; i<letrasI.length; i++){
+   letrasI[i].style.fontSize=tamanio+"px";
+   letrasI[i].style.color="#fff";
+   
+   
+    }
+
+    for(var w1=0; w1<vcabecera.length; w1++){
+    vcabecera[w1].style.fontSize=""+(tamanio*0.8)+"px";
+
+    }
+
+
+    $(".tabla").css("left","8%");
+    $(".tabla").css("top","48%");
+
+    $(".tabla th").css("width",""+(tamanio*6)+"px");
+    $(".tabla th").css("height",""+(tamanio*2)+"px");
+
+    $(".tabla td").css("height",""+(tamanio*2)+"px");
+     $(".tabla td").css("width",""+(tamanio*6)+"px");
+    $(".tabla").css("font-size",""+(tamanio-80)+"px");
+
+}
+
+function inicio(){
+ajustar();
+//sonidoFondo();
+}
+
+
+var cantidad=0;
+  $(init);
+   
+  var dimension=document.getElementsByClassName("cajas").length;
+
+  function init(){
+     // desordenar("cajas");
+    $('#a1').draggable({containment: "window",revert:true,drag:arrastrar});
+    $('#a2').draggable({containment: "window",revert:true,drag:arrastrar});
+    $('#a3').draggable({containment: "window",revert:true,drag:arrastrar});
+    $('#a4').draggable({containment: "window",revert:true,drag:arrastrar});
+    $('#a5').draggable({containment: "window",revert:true,drag:arrastrar});
+    $('#a6').draggable({containment: "window",revert:true,drag:arrastrar});
+    $('#a7').draggable({containment: "window",revert:true,drag:arrastrar});
+    $('#a8').draggable({containment: "window",revert:true,drag:arrastrar});
+    $('#a9').draggable({containment: "window",revert:true,drag:arrastrar});
+    $('#a10').draggable({containment: "window",revert:true,drag:arrastrar});
+    $('#a11').draggable({containment: "window",revert:true,drag:arrastrar});
+    $('#a12').draggable({containment: "window",revert:true,drag:arrastrar});
+    $('#a13').draggable({containment: "window",revert:true,drag:arrastrar});
+    $('#a14').draggable({containment: "window",revert:true,drag:arrastrar});
+    $('#a15').draggable({containment: "window",revert:true,drag:arrastrar});
+    $('#a16').draggable({containment: "window",revert:true,drag:arrastrar});
+    $('#a17').draggable({containment: "window",revert:true,drag:arrastrar});
+    $('#a18').draggable({containment: "window",revert:true,drag:arrastrar});
+    $('#a19').draggable({containment: "window",revert:true,drag:arrastrar});
+    $('#a20').draggable({containment: "window",revert:true,drag:arrastrar});
+    $('#a21').draggable({containment: "window",revert:true,drag:arrastrar});
+    $('#a22').draggable({containment: "window",revert:true,drag:arrastrar});
+    $('#a23').draggable({containment: "window",revert:true,drag:arrastrar});
+    $('#a24').draggable({containment: "window",revert:true,drag:arrastrar});
+    $('#a25').draggable({containment: "window",revert:true,drag:arrastrar});
+
+  
+   
+
+   $('#n1').droppable( {drop:soltar});
+   $('#n2').droppable( {drop:soltar});
+   $('#n3').droppable( {drop:soltar});
+   $('#n4').droppable( {drop:soltar});
+   $('#n5').droppable( {drop:soltar});
+    $('#n6').droppable( {drop:soltar});
+    $('#n7').droppable( {drop:soltar});
+    $('#n8').droppable( {drop:soltar});
+    $('#n9').droppable( {drop:soltar});
+    $('#n10').droppable( {drop:soltar});
+    $('#n11').droppable( {drop:soltar});
+    $('#n12').droppable( {drop:soltar});
+    $('#n13').droppable( {drop:soltar});
+    $('#n14').droppable( {drop:soltar});
+    $('#n15').droppable( {drop:soltar});
+    $('#n16').droppable( {drop:soltar});
+    $('#n17').droppable( {drop:soltar});
+    $('#n18').droppable( {drop:soltar});
+    $('#n19').droppable( {drop:soltar});
+    $('#n20').droppable( {drop:soltar});
+    $('#n21').droppable( {drop:soltar});
+    $('#n22').droppable( {drop:soltar});
+    $('#n23').droppable( {drop:soltar});
+    $('#n24').droppable( {drop:soltar});
+    $('#n25').droppable( {drop:soltar});
+
+
+
+
+    
+  }
+
+
+
+   
+function sonidoFondo(){
+  var audio = document.createElement("audio");
+ 
+    audio.src = "sonido/sonidoF.mp3";
+    audio.play();
+}
+</script>
+
+
+
+</script>
+</body>
+</html>
